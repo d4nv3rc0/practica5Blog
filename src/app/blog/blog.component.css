@@ -1,0 +1,54 @@
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.flex aside{
+width: 100%;
+padding: 0px 20px;
+}
+
+.flex section{
+    width: 100%;
+    padding: 0px 20px;
+}
+
+
+
+
+/* Inicio form*/
+input, label, textarea{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.btn{
+    background-color: black;
+    color: white;
+    padding: 7px;
+    border: 0px;
+    border-radius: 10px;
+}
+
+/*Fin form*/
+
+
+
+
+@media(min-width: 800px){
+
+    .flex aside{
+        width: 30%;
+      
+        }
+        
+     .flex section{
+        width: 70%;
+        }
+
+   
+
+
+
+}

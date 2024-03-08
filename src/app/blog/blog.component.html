@@ -1,0 +1,40 @@
+<div class="flex">
+    <aside>
+        <!--Formulario-->
+        <div>
+            <label for="titulo">Título</label>
+            <input type="text" name="" id="titulo" [(ngModel)]="newNoticia.titulo">
+        </div>
+        <div>
+            <label for="imagen">Imagen</label>
+            <input type="url" name="" id="imagen" [(ngModel)]="newNoticia.imagen">
+        </div>
+        <div>
+            <label for="bodynoticia">Cuerpo de noticia</label>
+            <textarea id="bodynoticia" cols="30" rows="10" [(ngModel)]="newNoticia.bodynoticia"></textarea>
+        </div>
+        <div>
+            <label for="fecha">Fecha de publicación</label>
+            <input type="date" name="" id="fecha" [(ngModel)]="newNoticia.fecha">
+        </div>
+       <button class="btn" (click)="getDataNoticia()">Enviar</button>
+        
+
+    </aside>
+
+    <section>
+        <!--Listado-->
+        <h2>Listado de noticias</h2>
+        <hr>
+        <div class="row" [innerHTML]="getNoticias()"> <!--Al usar innerHTML se pierden los estilos-->
+            
+
+        </div>
+    
+    </section>
+
+</div>
+
+
+
+

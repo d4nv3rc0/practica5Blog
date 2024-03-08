@@ -1,1 +1,51 @@
-/* You can add global styles to this file, and also import other style files */
+/* /*Estilos globales*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+}
+/*poner todas las imágenes responsivas*/
+
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+
+}
+
+
+/*Inicio Listado*/
+.row{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+
+}
+.row article{
+    border: 1px solid white;
+    box-shadow: 1px 1px 7px #ccc ;
+    padding: 10px;
+}
+
+
+/*Fin de Listado*/
+
+
+@media(min-width: 800px){
+
+   
+     .row article{
+        width: calc(33.333% - 10px); /*Regla calculada*/
+        }
+        
+
+
+
+}
